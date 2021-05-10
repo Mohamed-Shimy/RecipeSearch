@@ -20,6 +20,8 @@
 		D9FDA6582649A52100CA84D3 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FDA6502649A52100CA84D3 /* Loadable.swift */; };
 		D9FDA6592649A52100CA84D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FDA6512649A52100CA84D3 /* NetworkError.swift */; };
 		D9FDA65A2649A52100CA84D3 /* RemoteTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FDA6522649A52100CA84D3 /* RemoteTarget.swift */; };
+		D9FDA65E2649C21900CA84D3 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FDA65D2649C21900CA84D3 /* Recipe.swift */; };
+		D9FDA6602649C3A100CA84D3 /* RecipeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FDA65F2649C3A100CA84D3 /* RecipeInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D9FDA6502649A52100CA84D3 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		D9FDA6512649A52100CA84D3 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D9FDA6522649A52100CA84D3 /* RemoteTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteTarget.swift; sourceTree = "<group>"; };
+		D9FDA65D2649C21900CA84D3 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		D9FDA65F2649C3A100CA84D3 /* RecipeInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		D9FDA63526483FBD00CA84D3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D9FDA65C2649C20500CA84D3 /* Models */,
 				D9FDA6472649A4F500CA84D3 /* Services */,
 				D9FDA63626483FC700CA84D3 /* Extensions */,
 				D9FDA63426483FA700CA84D3 /* Modules */,
@@ -200,6 +205,15 @@
 			path = APIs;
 			sourceTree = "<group>";
 		};
+		D9FDA65C2649C20500CA84D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9FDA65D2649C21900CA84D3 /* Recipe.swift */,
+				D9FDA65F2649C3A100CA84D3 /* RecipeInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9FDA6552649A52100CA84D3 /* Extension.swift in Sources */,
+				D9FDA65E2649C21900CA84D3 /* Recipe.swift in Sources */,
 				D9FDA6562649A52100CA84D3 /* RequestStatus.swift in Sources */,
 				D9FDA6542649A52100CA84D3 /* NetworkManager.swift in Sources */,
 				D9FDA6572649A52100CA84D3 /* Networkable.swift in Sources */,
@@ -279,6 +294,7 @@
 				D9FDA6582649A52100CA84D3 /* Loadable.swift in Sources */,
 				D9FDA6592649A52100CA84D3 /* NetworkError.swift in Sources */,
 				D9FDA61D26483EC200CA84D3 /* AppDelegate.swift in Sources */,
+				D9FDA6602649C3A100CA84D3 /* RecipeInfoModel.swift in Sources */,
 				D9FDA65A2649A52100CA84D3 /* RemoteTarget.swift in Sources */,
 				D9FDA63A2648403200CA84D3 /* HomeViewController.swift in Sources */,
 			);

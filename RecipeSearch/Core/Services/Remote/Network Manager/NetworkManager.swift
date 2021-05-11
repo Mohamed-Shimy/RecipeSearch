@@ -8,17 +8,19 @@
 
 import Foundation
 
+typealias NetworkActivity = ((RequestStatus) -> Void)?
+
 class NetworkManager<Target: RemoteTarget> : Networkable
 {
     // MARK: Properites
     
     private var session = URLSession.shared
-    private var activity: ((RequestStatus) -> Void)?
+    private var activity: NetworkActivity
     private(set) var isLive: Bool = false
     
     // MARK: init
     
-    init(isLive: Bool = true, activity: ((RequestStatus) -> Void)? = nil)
+    init(isLive: Bool = true, activity: NetworkActivity = nil)
     {
         self.isLive = isLive
         self.activity = activity
@@ -57,7 +59,7 @@ class NetworkManager<Target: RemoteTarget> : Networkable
     
     // MARK: Private Methods
     
-    private func remoteRequest<Model: Decodable>(_ target: Target, activity: ((RequestStatus) -> Void)?,
+    private func remoteRequest<Model: Decodable>(_ target: Target, activity: NetworkActivity,
                                                  completion: @escaping (Result<Model, Error>) -> Void) -> URLSessionDataTask?
     {
         guard let request = try? URLRequest(target: target) else { return nil }

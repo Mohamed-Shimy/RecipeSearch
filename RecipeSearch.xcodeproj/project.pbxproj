@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */; };
+		D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */; };
+		D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */; };
 		D9FDA61D26483EC200CA84D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FDA61C26483EC200CA84D3 /* AppDelegate.swift */; };
 		D9FDA62426483EC200CA84D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FDA62226483EC200CA84D3 /* Home.storyboard */; };
 		D9FDA62626483EC700CA84D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9FDA62526483EC700CA84D3 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyAPI.swift; sourceTree = "<group>"; };
+		D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyNetworkable.swift; sourceTree = "<group>"; };
+		D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyNetworkManager.swift; sourceTree = "<group>"; };
 		D9FDA61926483EC200CA84D3 /* RecipeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FDA61C26483EC200CA84D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9FDA62326483EC200CA84D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -55,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D99FF07E264AF67900D02F80 /* Forkify */ = {
+			isa = PBXGroup;
+			children = (
+				D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */,
+				D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */,
+				D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */,
+			);
+			path = Forkify;
+			sourceTree = "<group>";
+		};
 		D9FDA61026483EC200CA84D3 = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +143,9 @@
 		D9FDA63526483FBD00CA84D3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D9FDA6612649C54300CA84D3 /* Helpers */,
 				D9FDA65C2649C20500CA84D3 /* Models */,
 				D9FDA6472649A4F500CA84D3 /* Services */,
-				D9FDA63626483FC700CA84D3 /* Extensions */,
 				D9FDA63426483FA700CA84D3 /* Modules */,
 			);
 			path = Core;
@@ -201,6 +217,7 @@
 		D9FDA65B2649A58700CA84D3 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				D99FF07E264AF67900D02F80 /* Forkify */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -212,6 +229,14 @@
 				D9FDA65F2649C3A100CA84D3 /* RecipeInfoModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D9FDA6612649C54300CA84D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D9FDA63626483FC700CA84D3 /* Extensions */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +312,7 @@
 			files = (
 				D9FDA6552649A52100CA84D3 /* Extension.swift in Sources */,
 				D9FDA65E2649C21900CA84D3 /* Recipe.swift in Sources */,
+				D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */,
 				D9FDA6562649A52100CA84D3 /* RequestStatus.swift in Sources */,
 				D9FDA6542649A52100CA84D3 /* NetworkManager.swift in Sources */,
 				D9FDA6572649A52100CA84D3 /* Networkable.swift in Sources */,
@@ -296,7 +322,9 @@
 				D9FDA61D26483EC200CA84D3 /* AppDelegate.swift in Sources */,
 				D9FDA6602649C3A100CA84D3 /* RecipeInfoModel.swift in Sources */,
 				D9FDA65A2649A52100CA84D3 /* RemoteTarget.swift in Sources */,
+				D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */,
 				D9FDA63A2648403200CA84D3 /* HomeViewController.swift in Sources */,
+				D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

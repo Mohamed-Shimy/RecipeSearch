@@ -13,7 +13,7 @@ import Foundation
 protocol HomeViewDelegate : AnyObject
 {
     var interactor: HomeInteractorDelegate? { get set }
-    //var router: HomeRouter? { get set }
+    var router: HomeRouter? { get set }
     
     func display(search results: HomeDataManager)
     func display(error message: Alert)

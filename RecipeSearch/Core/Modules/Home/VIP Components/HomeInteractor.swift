@@ -26,17 +26,24 @@ class HomeInteractor : HomeInteractorDelegate
     
     func search(for key: String)
     {
-        networkManager.search(for: key)
-        { [weak self] result in
-            
-            switch result
-            {
-                case let .success(results):
-                    self?.presenter?.didRecive(search: results)
-                    
-                case .failure:
-                    self?.presenter?.didRecive(error: .canNotFindRecipe(key))
-            }
+        guard !key.isEmpty else{
+            presenter?.didRecive(search: [])
+            return
         }
+        
+        networkManager.search(for: key, completion: searchCallBack)
+    }
+    
+    private func searchCallBack(_ result: Result<SearchRespnse, Error>)
+    {
+        var recipes: [RecipeModel] = []
+        
+        if case let .success(response) = result,
+           let results = response.recipes
+        {
+            recipes = results
+        }
+        
+        presenter?.didRecive(search: recipes)
     }
 }

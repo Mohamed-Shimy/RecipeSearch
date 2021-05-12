@@ -19,7 +19,7 @@ struct RecipeModel : Codable
         imageURL,
         publisherURL: String?
     
-    let socialRank: Int?
+    let socialRank: Double?
     
     enum CodingKeys: String, CodingKey
     {
@@ -62,5 +62,5 @@ struct Recipe
         imageURL,
         publisherURL: String
     
-    let socialRank: Int
+    let socialRank: Double
 }

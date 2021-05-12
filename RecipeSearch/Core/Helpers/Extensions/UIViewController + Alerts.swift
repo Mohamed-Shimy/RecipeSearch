@@ -13,6 +13,8 @@ extension UIViewController
     func showAlert(_ title: String, message: String)
     {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(.init(title: "OK", style: .cancel))
+        
         DispatchQueue.main.async
         { [weak self] in
             

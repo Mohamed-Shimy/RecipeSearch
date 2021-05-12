@@ -39,7 +39,7 @@ class TableViewDataManager<Model, Cell: ConfigurableTableCell> : NSObject, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(Cell.self)") as! Cell
+        let cell: Cell = tableView.dequeue()
         let item = item(at: indexPath.row)
         cell.configure(with: item, at: indexPath)
         return cell

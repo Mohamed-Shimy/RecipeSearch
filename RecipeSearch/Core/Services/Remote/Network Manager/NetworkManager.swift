@@ -67,6 +67,9 @@ class NetworkManager<Target: RemoteTarget> : Networkable
         let task = session.dataTask(with: request)
         { [weak self] (data, response, error) in
             
+            //print(response)
+            print(Model.self)
+            
             activity?(.populating)
             
             if let error = error { activity?(.finish); completion(.failure(NetworkError(error))) }
@@ -78,7 +81,7 @@ class NetworkManager<Target: RemoteTarget> : Networkable
                 return
             }
             
-            // print(String(data: data, encoding: .utf8) ?? "")
+            print(String(data: data, encoding: .utf8) ?? "")
             
             do
             {

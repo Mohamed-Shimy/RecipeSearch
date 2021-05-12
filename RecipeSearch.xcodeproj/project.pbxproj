@@ -18,7 +18,22 @@
 		D96DBB9E264B228800F004E6 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB9C264B228800F004E6 /* RecipeTableViewCell.swift */; };
 		D96DBB9F264B228800F004E6 /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96DBB9D264B228800F004E6 /* RecipeTableViewCell.xib */; };
 		D96DBBA2264B2C3C00F004E6 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBBA1264B2C3C00F004E6 /* HomeDataManager.swift */; };
+		D96E38BC264C29E8008BEB11 /* SearchRespnse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96E38BB264C29E8008BEB11 /* SearchRespnse.swift */; };
+		D96E38BF264C310B008BEB11 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96E38BE264C310B008BEB11 /* ImageStore.swift */; };
+		D96E38C1264C3883008BEB11 /* UIImageView + RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96E38C0264C3883008BEB11 /* UIImageView + RemoteImage.swift */; };
+		D96E38C5264C454F008BEB11 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96E38C4264C454F008BEB11 /* DropDown.swift */; };
+		D96E38C7264C489B008BEB11 /* UIView + LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96E38C6264C489B008BEB11 /* UIView + LayoutConstraint.swift */; };
 		D9968940264BE37D0009135C /* HomeDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996893F264BE37C0009135C /* HomeDataManagerDelegate.swift */; };
+		D9968942264BEF6E0009135C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968941264BEF6E0009135C /* UITableView.swift */; };
+		D9968946264C129B0009135C /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968945264C129B0009135C /* Navigatable.swift */; };
+		D9968948264C13C10009135C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968947264C13C10009135C /* Navigator.swift */; };
+		D996894A264C14010009135C /* UIViewController + Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968949264C14010009135C /* UIViewController + Navigator.swift */; };
+		D996894E264C15D50009135C /* UIApplecation + Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996894D264C15D50009135C /* UIApplecation + Navigation.swift */; };
+		D9968950264C16580009135C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996894F264C16580009135C /* HomeRouter.swift */; };
+		D9968953264C16A30009135C /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968952264C16A30009135C /* HomeNavigator.swift */; };
+		D9968955264C18370009135C /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968954264C18370009135C /* AppNavigator.swift */; };
+		D9968957264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968956264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift */; };
+		D996895A264C1B530009135C /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968959264C1B530009135C /* Storyboard.swift */; };
 		D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */; };
 		D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */; };
 		D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */; };
@@ -51,7 +66,22 @@
 		D96DBB9C264B228800F004E6 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		D96DBB9D264B228800F004E6 /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
 		D96DBBA1264B2C3C00F004E6 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		D96E38BB264C29E8008BEB11 /* SearchRespnse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRespnse.swift; sourceTree = "<group>"; };
+		D96E38BE264C310B008BEB11 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		D96E38C0264C3883008BEB11 /* UIImageView + RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + RemoteImage.swift"; sourceTree = "<group>"; };
+		D96E38C4264C454F008BEB11 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		D96E38C6264C489B008BEB11 /* UIView + LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + LayoutConstraint.swift"; sourceTree = "<group>"; };
 		D996893F264BE37C0009135C /* HomeDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManagerDelegate.swift; sourceTree = "<group>"; };
+		D9968941264BEF6E0009135C /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		D9968945264C129B0009135C /* Navigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
+		D9968947264C13C10009135C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D9968949264C14010009135C /* UIViewController + Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Navigator.swift"; sourceTree = "<group>"; };
+		D996894D264C15D50009135C /* UIApplecation + Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplecation + Navigation.swift"; sourceTree = "<group>"; };
+		D996894F264C16580009135C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D9968952264C16A30009135C /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
+		D9968954264C18370009135C /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		D9968956264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard + UIViewController + Instantiate.swift"; sourceTree = "<group>"; };
+		D9968959264C1B530009135C /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyAPI.swift; sourceTree = "<group>"; };
 		D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyNetworkable.swift; sourceTree = "<group>"; };
 		D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyNetworkManager.swift; sourceTree = "<group>"; };
@@ -91,6 +121,7 @@
 				D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */,
 				D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */,
 				D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */,
+				D9968951264C16920009135C /* Navigation */,
 			);
 			path = "VIP Components";
 			sourceTree = "<group>";
@@ -116,6 +147,8 @@
 		D96DBB95264B204700F004E6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				D9968945264C129B0009135C /* Navigatable.swift */,
+				D9968947264C13C10009135C /* Navigator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -144,6 +177,47 @@
 				D996893F264BE37C0009135C /* HomeDataManagerDelegate.swift */,
 			);
 			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		D96E38BD264C30FA008BEB11 /* Image Store */ = {
+			isa = PBXGroup;
+			children = (
+				D96E38BE264C310B008BEB11 /* ImageStore.swift */,
+			);
+			path = "Image Store";
+			sourceTree = "<group>";
+		};
+		D96E38C2264C4535008BEB11 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D96E38C3264C453D008BEB11 /* DropDown */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D96E38C3264C453D008BEB11 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				D96E38C4264C454F008BEB11 /* DropDown.swift */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		D9968951264C16920009135C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D996894F264C16580009135C /* HomeRouter.swift */,
+				D9968952264C16A30009135C /* HomeNavigator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D9968958264C1B460009135C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D9968959264C1B530009135C /* Storyboard.swift */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		D99FF07E264AF67900D02F80 /* Forkify */ = {
@@ -188,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				D9FDA61C26483EC200CA84D3 /* AppDelegate.swift */,
+				D9968954264C18370009135C /* AppNavigator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -240,6 +315,12 @@
 			isa = PBXGroup;
 			children = (
 				D96DBB91264B1F6500F004E6 /* UIViewController + Alerts.swift */,
+				D9968949264C14010009135C /* UIViewController + Navigator.swift */,
+				D9968941264BEF6E0009135C /* UITableView.swift */,
+				D996894D264C15D50009135C /* UIApplecation + Navigation.swift */,
+				D9968956264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift */,
+				D96E38C0264C3883008BEB11 /* UIImageView + RemoteImage.swift */,
+				D96E38C6264C489B008BEB11 /* UIView + LayoutConstraint.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				D9FDA65B2649A58700CA84D3 /* APIs */,
+				D96E38BD264C30FA008BEB11 /* Image Store */,
 				D9FDA64A2649A52100CA84D3 /* Network Manager */,
 			);
 			path = Remote;
@@ -316,6 +398,7 @@
 			children = (
 				D9FDA65D2649C21900CA84D3 /* Recipe.swift */,
 				D9FDA65F2649C3A100CA84D3 /* RecipeInfoModel.swift */,
+				D96E38BB264C29E8008BEB11 /* SearchRespnse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +406,8 @@
 		D9FDA6612649C54300CA84D3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D96E38C2264C4535008BEB11 /* UI */,
+				D9968958264C1B460009135C /* Storyboard */,
 				D96DBB95264B204700F004E6 /* Navigation */,
 				D96DBB94264B203E00F004E6 /* Data Source */,
 				D96DBB8C264B1D1D00F004E6 /* Alert Strings */,
@@ -408,26 +493,41 @@
 				D9FDA65E2649C21900CA84D3 /* Recipe.swift in Sources */,
 				D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */,
 				D9FDA6562649A52100CA84D3 /* RequestStatus.swift in Sources */,
+				D96E38C7264C489B008BEB11 /* UIView + LayoutConstraint.swift in Sources */,
+				D9968942264BEF6E0009135C /* UITableView.swift in Sources */,
 				D9FDA6542649A52100CA84D3 /* NetworkManager.swift in Sources */,
+				D996894E264C15D50009135C /* UIApplecation + Navigation.swift in Sources */,
 				D96DBB90264B1D5F00F004E6 /* Alerts.swift in Sources */,
 				D9FDA6572649A52100CA84D3 /* Networkable.swift in Sources */,
 				D96DBB92264B1F6500F004E6 /* UIViewController + Alerts.swift in Sources */,
+				D996894A264C14010009135C /* UIViewController + Navigator.swift in Sources */,
 				D9FDA6532649A52100CA84D3 /* Encoding.swift in Sources */,
+				D96E38C1264C3883008BEB11 /* UIImageView + RemoteImage.swift in Sources */,
+				D9968955264C18370009135C /* AppNavigator.swift in Sources */,
+				D9968957264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift in Sources */,
 				D96DBBA2264B2C3C00F004E6 /* HomeDataManager.swift in Sources */,
+				D996895A264C1B530009135C /* Storyboard.swift in Sources */,
 				D9968940264BE37D0009135C /* HomeDataManagerDelegate.swift in Sources */,
 				D9FDA6582649A52100CA84D3 /* Loadable.swift in Sources */,
+				D9968946264C129B0009135C /* Navigatable.swift in Sources */,
 				D9FDA6592649A52100CA84D3 /* NetworkError.swift in Sources */,
 				D96DBB97264B207700F004E6 /* TableViewDataSource.swift in Sources */,
 				D9FDA61D26483EC200CA84D3 /* AppDelegate.swift in Sources */,
 				D9FDA6602649C3A100CA84D3 /* RecipeInfoModel.swift in Sources */,
+				D9968950264C16580009135C /* HomeRouter.swift in Sources */,
 				D96DBB9E264B228800F004E6 /* RecipeTableViewCell.swift in Sources */,
 				D9FDA65A2649A52100CA84D3 /* RemoteTarget.swift in Sources */,
 				D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */,
 				D96DBB99264B209B00F004E6 /* ConfigurableCell.swift in Sources */,
+				D96E38C5264C454F008BEB11 /* DropDown.swift in Sources */,
 				D9FDA63A2648403200CA84D3 /* HomeViewController.swift in Sources */,
+				D9968948264C13C10009135C /* Navigator.swift in Sources */,
 				D96DBB8B264B1B1400F004E6 /* HomePresenter.swift in Sources */,
 				D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */,
 				D96DBB89264B1B0800F004E6 /* HomeInteractor.swift in Sources */,
+				D9968953264C16A30009135C /* HomeNavigator.swift in Sources */,
+				D96E38BF264C310B008BEB11 /* ImageStore.swift in Sources */,
+				D96E38BC264C29E8008BEB11 /* SearchRespnse.swift in Sources */,
 				D96DBB8E264B1D2C00F004E6 /* Titles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

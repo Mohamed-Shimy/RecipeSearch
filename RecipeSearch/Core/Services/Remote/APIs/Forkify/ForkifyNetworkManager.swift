@@ -23,7 +23,7 @@ struct ForkifyNetworkManager : ForkifyNetworkable
     
     // MARK: Method
     
-    func search(for key: String, completion: @escaping (Result<[RecipeModel], Error>) -> Void)
+    func search(for key: String, completion: @escaping (Result<SearchRespnse, Error>) -> Void)
     {
         manager.request(.search(for: key), completion: completion)
     }

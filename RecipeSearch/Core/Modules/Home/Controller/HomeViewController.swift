@@ -10,7 +10,50 @@ import UIKit
 
 class HomeViewController : UIViewController
 {
+    // MARK:- Outlets
     
+    @IBOutlet weak var resultTableView: UITableView!
+    @IBOutlet weak var searchTextField: UITextField!
+    
+    // MARK:- Properties
+    
+    var interactor: HomeInteractorDelegate?
+    
+    // MARK:- ViewController LifeCycel
+    
+    // MARK:- Methods
+    
+    // MARK:- Actions
+}
+
+// MARK:- UITextFieldDelegate
+
+extension HomeViewController : UITextFieldDelegate
+{
+    
+}
+
+// MARK:- HomeViewDelegate
+
+extension HomeViewController : HomeViewDelegate
+{
+    func display(search results: HomeDataManager)
+    {
+        results.delegate = self
+        resultTableView.dataSource = results.dataSource
+        resultTableView.delegate = results
+        resultTableView.reloadData()
+    }
+}
+
+// MARK:- HomeDataManagerDelegate
+
+extension HomeViewController : HomeDataManagerDelegate
+{
+    func didSelect(_ item: Recipe, at indexPath: IndexPath)
+    {
+        // navigate to recipe info page
+    }
 }
 
 /*

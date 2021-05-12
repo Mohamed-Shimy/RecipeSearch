@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D96DBB87264B1AF600F004E6 /* HomeVIPProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */; };
+		D96DBB89264B1B0800F004E6 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */; };
+		D96DBB8B264B1B1400F004E6 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */; };
+		D96DBB8E264B1D2C00F004E6 /* Titles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB8D264B1D2C00F004E6 /* Titles.swift */; };
+		D96DBB90264B1D5F00F004E6 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB8F264B1D5F00F004E6 /* Alerts.swift */; };
+		D96DBB92264B1F6500F004E6 /* UIViewController + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB91264B1F6500F004E6 /* UIViewController + Alerts.swift */; };
+		D96DBB97264B207700F004E6 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB96264B207700F004E6 /* TableViewDataSource.swift */; };
+		D96DBB99264B209B00F004E6 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB98264B209B00F004E6 /* ConfigurableCell.swift */; };
+		D96DBB9E264B228800F004E6 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB9C264B228800F004E6 /* RecipeTableViewCell.swift */; };
+		D96DBB9F264B228800F004E6 /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96DBB9D264B228800F004E6 /* RecipeTableViewCell.xib */; };
+		D96DBBA2264B2C3C00F004E6 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBBA1264B2C3C00F004E6 /* HomeDataManager.swift */; };
+		D9968940264BE37D0009135C /* HomeDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996893F264BE37C0009135C /* HomeDataManagerDelegate.swift */; };
 		D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */; };
 		D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */; };
 		D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */; };
@@ -28,6 +40,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIPProtocols.swift; sourceTree = "<group>"; };
+		D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D96DBB8D264B1D2C00F004E6 /* Titles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titles.swift; sourceTree = "<group>"; };
+		D96DBB8F264B1D5F00F004E6 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		D96DBB91264B1F6500F004E6 /* UIViewController + Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alerts.swift"; sourceTree = "<group>"; };
+		D96DBB96264B207700F004E6 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		D96DBB98264B209B00F004E6 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		D96DBB9C264B228800F004E6 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		D96DBB9D264B228800F004E6 /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
+		D96DBBA1264B2C3C00F004E6 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		D996893F264BE37C0009135C /* HomeDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManagerDelegate.swift; sourceTree = "<group>"; };
 		D99FF07F264AF68400D02F80 /* ForkifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyAPI.swift; sourceTree = "<group>"; };
 		D99FF081264AF95600D02F80 /* ForkifyNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyNetworkable.swift; sourceTree = "<group>"; };
 		D99FF083264AFA5100D02F80 /* ForkifyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyNetworkManager.swift; sourceTree = "<group>"; };
@@ -61,6 +85,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D96DBB85264B1AD400F004E6 /* VIP Components */ = {
+			isa = PBXGroup;
+			children = (
+				D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */,
+				D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */,
+				D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */,
+			);
+			path = "VIP Components";
+			sourceTree = "<group>";
+		};
+		D96DBB8C264B1D1D00F004E6 /* Alert Strings */ = {
+			isa = PBXGroup;
+			children = (
+				D96DBB8D264B1D2C00F004E6 /* Titles.swift */,
+				D96DBB8F264B1D5F00F004E6 /* Alerts.swift */,
+			);
+			path = "Alert Strings";
+			sourceTree = "<group>";
+		};
+		D96DBB94264B203E00F004E6 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				D96DBB96264B207700F004E6 /* TableViewDataSource.swift */,
+				D96DBB98264B209B00F004E6 /* ConfigurableCell.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		D96DBB95264B204700F004E6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D96DBB9A264B224F00F004E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D96DBB9B264B225700F004E6 /* RecipeTableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D96DBB9B264B225700F004E6 /* RecipeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D96DBB9C264B228800F004E6 /* RecipeTableViewCell.swift */,
+				D96DBB9D264B228800F004E6 /* RecipeTableViewCell.xib */,
+			);
+			path = RecipeTableViewCell;
+			sourceTree = "<group>";
+		};
+		D96DBBA0264B2C2A00F004E6 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D96DBBA1264B2C3C00F004E6 /* HomeDataManager.swift */,
+				D996893F264BE37C0009135C /* HomeDataManagerDelegate.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
 		D99FF07E264AF67900D02F80 /* Forkify */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +239,7 @@
 		D9FDA63626483FC700CA84D3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D96DBB91264B1F6500F004E6 /* UIViewController + Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,6 +247,9 @@
 		D9FDA63726483FE900CA84D3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D96DBBA0264B2C2A00F004E6 /* Data Manager */,
+				D96DBB85264B1AD400F004E6 /* VIP Components */,
+				D96DBB9A264B224F00F004E6 /* View */,
 				D9FDA63826483FF100CA84D3 /* Controller */,
 			);
 			path = Home;
@@ -234,6 +323,9 @@
 		D9FDA6612649C54300CA84D3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D96DBB95264B204700F004E6 /* Navigation */,
+				D96DBB94264B203E00F004E6 /* Data Source */,
+				D96DBB8C264B1D1D00F004E6 /* Alert Strings */,
 				D9FDA63626483FC700CA84D3 /* Extensions */,
 			);
 			path = Helpers;
@@ -300,6 +392,7 @@
 				D9FDA62926483EC700CA84D3 /* LaunchScreen.storyboard in Resources */,
 				D9FDA62626483EC700CA84D3 /* Assets.xcassets in Resources */,
 				D9FDA62426483EC200CA84D3 /* Home.storyboard in Resources */,
+				D96DBB9F264B228800F004E6 /* RecipeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,20 +404,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9FDA6552649A52100CA84D3 /* Extension.swift in Sources */,
+				D96DBB87264B1AF600F004E6 /* HomeVIPProtocols.swift in Sources */,
 				D9FDA65E2649C21900CA84D3 /* Recipe.swift in Sources */,
 				D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */,
 				D9FDA6562649A52100CA84D3 /* RequestStatus.swift in Sources */,
 				D9FDA6542649A52100CA84D3 /* NetworkManager.swift in Sources */,
+				D96DBB90264B1D5F00F004E6 /* Alerts.swift in Sources */,
 				D9FDA6572649A52100CA84D3 /* Networkable.swift in Sources */,
+				D96DBB92264B1F6500F004E6 /* UIViewController + Alerts.swift in Sources */,
 				D9FDA6532649A52100CA84D3 /* Encoding.swift in Sources */,
+				D96DBBA2264B2C3C00F004E6 /* HomeDataManager.swift in Sources */,
+				D9968940264BE37D0009135C /* HomeDataManagerDelegate.swift in Sources */,
 				D9FDA6582649A52100CA84D3 /* Loadable.swift in Sources */,
 				D9FDA6592649A52100CA84D3 /* NetworkError.swift in Sources */,
+				D96DBB97264B207700F004E6 /* TableViewDataSource.swift in Sources */,
 				D9FDA61D26483EC200CA84D3 /* AppDelegate.swift in Sources */,
 				D9FDA6602649C3A100CA84D3 /* RecipeInfoModel.swift in Sources */,
+				D96DBB9E264B228800F004E6 /* RecipeTableViewCell.swift in Sources */,
 				D9FDA65A2649A52100CA84D3 /* RemoteTarget.swift in Sources */,
 				D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */,
+				D96DBB99264B209B00F004E6 /* ConfigurableCell.swift in Sources */,
 				D9FDA63A2648403200CA84D3 /* HomeViewController.swift in Sources */,
+				D96DBB8B264B1B1400F004E6 /* HomePresenter.swift in Sources */,
 				D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */,
+				D96DBB89264B1B0800F004E6 /* HomeInteractor.swift in Sources */,
+				D96DBB8E264B1D2C00F004E6 /* Titles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -456,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -474,6 +578,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
 				INFOPLIST_FILE = RecipeSearch/Configurations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,6 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
 				INFOPLIST_FILE = RecipeSearch/Configurations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

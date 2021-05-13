@@ -14,6 +14,7 @@ class HomeInteractor : HomeInteractorDelegate
     
     var presenter: HomePresenterDelegate?
     private var networkManager: ForkifyNetworkManager
+    private let suggestionsBox = SuggestionBox.open
     
     // MARK:- init
     
@@ -33,6 +34,27 @@ class HomeInteractor : HomeInteractorDelegate
         
         networkManager.search(for: key, completion: searchCallBack)
     }
+    
+    func getSuggestions(for key: String)
+    {
+        var suggestions: [String] = []
+        if key.isEmpty
+        {
+            suggestions = suggestionsBox.getSuggestions()
+        }
+        else
+        {
+            suggestions = suggestionsBox.getSuggestions(for: key)
+        }
+        presenter?.didRecive(suggestions: suggestions)
+    }
+    
+    func save(suggestion title: String)
+    {
+        suggestionsBox.add(title)
+    }
+    
+    // MARK:- Helper
     
     private func searchCallBack(_ result: Result<SearchRespnse, Error>)
     {

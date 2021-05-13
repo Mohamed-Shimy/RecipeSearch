@@ -16,6 +16,7 @@ protocol HomeViewDelegate : AnyObject
     var router: HomeRouter? { get set }
     
     func display(search results: HomeDataManager)
+    func display(suggestions: [String])
     func display(error message: Alert)
 }
 
@@ -26,6 +27,8 @@ protocol HomeInteractorDelegate : AnyObject
     var presenter: HomePresenterDelegate? { get set }
     
     func search(for key: String)
+    func getSuggestions(for key: String)
+    func save(suggestion title: String)
 }
 
 // MARK: Presenter
@@ -35,5 +38,6 @@ protocol HomePresenterDelegate : AnyObject
     var view: HomeViewDelegate? { get set }
     
     func didRecive(search results: [RecipeModel])
+    func didRecive(suggestions: [String])
     func didRecive(error message: Alert?)
 }

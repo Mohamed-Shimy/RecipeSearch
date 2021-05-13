@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="RecipeSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="RecipeSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +48,20 @@
                                 <rect key="frame" x="0.0" y="122" width="414" height="730"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="FXb-Kk-W6n">
+                                <rect key="frame" x="187" y="467" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="iIt-Pt-x90"/>
+                                    <constraint firstAttribute="height" constant="40" id="lzu-wT-Sm4"/>
+                                </constraints>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FXb-Kk-W6n" firstAttribute="centerY" secondItem="NEB-UU-epn" secondAttribute="centerY" id="5aa-H0-q2T"/>
                             <constraint firstItem="NEB-UU-epn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6uY-cN-wnO"/>
                             <constraint firstItem="g0Y-q9-bl4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="73m-WH-eyO"/>
                             <constraint firstItem="NEB-UU-epn" firstAttribute="top" secondItem="g0Y-q9-bl4" secondAttribute="bottom" constant="20" id="Ble-Ht-Wuc"/>
@@ -59,9 +69,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NEB-UU-epn" secondAttribute="trailing" id="Pah-FM-s8m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g0Y-q9-bl4" secondAttribute="trailing" constant="10" id="bqC-VU-Crx"/>
                             <constraint firstItem="g0Y-q9-bl4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fVc-yC-N1y"/>
+                            <constraint firstItem="FXb-Kk-W6n" firstAttribute="centerX" secondItem="NEB-UU-epn" secondAttribute="centerX" id="sP2-xm-nWy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="FXb-Kk-W6n" id="xeO-aq-vdG"/>
                         <outlet property="resultTableView" destination="NEB-UU-epn" id="JHS-Kk-LfH"/>
                         <outlet property="searchContainerView" destination="g0Y-q9-bl4" id="WAZ-ic-PpS"/>
                         <outlet property="searchTextField" destination="21e-8H-QD2" id="H8K-PN-ZuH"/>
@@ -76,6 +88,9 @@
         <image name="search" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

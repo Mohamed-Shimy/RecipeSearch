@@ -24,6 +24,11 @@ class HomePresenter : HomePresenterDelegate
         view?.display(search: dataManager)
     }
     
+    func didRecive(suggestions: [String])
+    {
+        view?.display(suggestions: suggestions)
+    }
+    
     func didRecive(error message: Alert?)
     {
         view?.display(error: message ?? .tryAgain)

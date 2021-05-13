@@ -13,6 +13,7 @@ class HomeViewController : UIViewController
     // MARK:- Outlets
     
     @IBOutlet weak var searchContainerView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var resultTableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -39,6 +40,7 @@ class HomeViewController : UIViewController
         setupResultTableView()
         setupSearchTextField()
         setupDropDown()
+        setupActivityIndicator()
     }
     
     private func setupView()
@@ -70,18 +72,52 @@ class HomeViewController : UIViewController
         dropDown.delegate = self
     }
     
+    private func setupActivityIndicator()
+    {
+        activityIndicator.layer.cornerRadius = 5
+        activityIndicator.stopAnimating()
+    }
+    
     // MARK:- Methods
+    
+    func networkActivity(_ status: RequestStatus)
+    {
+        DispatchQueue.main.async
+        { [weak self] in
+            
+            switch status
+            {
+                case .loading, .populating: self?.startLoading()
+                case .finish: self?.stopLoading()
+            }
+        }
+    }
+    
+    private func startLoading()
+    {
+        resultTableView.alpha = 0.5
+        activityIndicator.startAnimating()
+    }
+    
+    private func stopLoading()
+    {
+        resultTableView.alpha = 1
+        activityIndicator.stopAnimating()
+    }
     
     private func search(for key: String)
     {
         interactor?.search(for: key)
     }
     
-    private func getSuggestions(for key: String) -> [String]
+    private func getSuggestions(for key: String)
     {
-        var items = suggestions.filter({ $0.lowercased().contains(key.lowercased()) })
-        if items.isEmpty { items = suggestions }
-        return items
+        interactor?.getSuggestions(for: key)
+    }
+    
+    private func save(suggestion title: String)
+    {
+        interactor?.save(suggestion: title)
     }
     
     private func displayDropDown(with items: [String])
@@ -101,8 +137,7 @@ class HomeViewController : UIViewController
     @objc func searchTextDidChanged(_ textField: UITextField)
     {
         let key = textField.text!
-        let items = getSuggestions(for: key)
-        displayDropDown(with: items)
+        getSuggestions(for: key)
     }
 }
 
@@ -113,8 +148,7 @@ extension HomeViewController : UITextFieldDelegate
     func textFieldDidBeginEditing(_ textField: UITextField)
     {
         let key = textField.text!
-        let items = getSuggestions(for: key)
-        displayDropDown(with: items)
+        getSuggestions(for: key)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
@@ -140,6 +174,11 @@ extension HomeViewController : HomeViewDelegate
             self?.resultTableView.reloadData()
         }
     }
+    
+    func display(suggestions: [String])
+    {
+        displayDropDown(with: suggestions)
+    }
 }
 
 // MARK:- HomeDataManagerDelegate
@@ -160,6 +199,7 @@ extension HomeViewController : DropDownDelegate
     {
         searchTextField.text = item
         searchTextField.resignFirstResponder()
+        save(suggestion: item)
         search(for: item)
     }
 }
@@ -170,7 +210,7 @@ extension HomeViewController
     {
         let view = Self.instantiate(storyboard: .home)
         let presenter = HomePresenter()
-        let interactor = HomeInteractor()
+        let interactor = HomeInteractor(networkManager: .init(activity: view.networkActivity))
         let router = HomeRouter(view)
         
         presenter.view = view
@@ -181,134 +221,3 @@ extension HomeViewController
         return view
     }
 }
-
-let suggestions = [
- "carrot",
- "broccoli",
- "asparagus",
- "cauliflower",
- "corn",
- "cucumber",
- "green pepper",
- "lettuce",
- "mushrooms",
- "onion",
- "potato",
- "pumpkin",
- "red pepper",
- "tomato",
- "beetroot",
- "brussel sprouts",
- "peas",
- "zucchini",
- "radish",
- "sweet potato",
- "artichoke",
- "leek",
- "cabbage",
- "celery",
- "chili",
- "garlic",
- "basil",
- "coriander",
- "parsley",
- "dill",
- "rosemary",
- "oregano",
- "cinnamon",
- "saffron",
- "green bean",
- "bean",
- "chickpea",
- "lentil",
- "apple",
- "apricot",
- "avocado",
- "banana",
- "blackberry",
- "blackcurrant",
- "blueberry",
- "boysenberry",
- "cherry",
- "coconut",
- "fig",
- "grape",
- "grapefruit",
- "kiwifruit",
- "lemon",
- "lime",
- "lychee",
- "mandarin",
- "mango",
- "melon",
- "nectarine",
- "orange",
- "papaya",
- "passion fruit",
- "peach",
- "pear",
- "pineapple",
- "plum",
- "pomegranate",
- "quince",
- "raspberry",
- "strawberry",
- "watermelon",
- "salad",
- "pizza",
- "pasta",
- "popcorn",
- "lobster",
- "steak",
- "bbq",
- "pudding",
- "hamburger",
- "pie",
- "cake",
- "sausage",
- "tacos",
- "kebab",
- "poutine",
- "seafood",
- "chips",
- "fries",
- "masala",
- "paella",
- "som tam",
- "chicken",
- "toast",
- "marzipan",
- "tofu",
- "ketchup",
- "hummus",
- "chili",
- "maple syrup",
- "parma ham",
- "fajitas",
- "champ",
- "lasagna",
- "poke",
- "chocolate",
- "croissant",
- "arepas",
- "bunny chow",
- "pierogi",
- "donuts",
- "rendang",
- "sushi",
- "ice cream",
- "duck",
- "curry",
- "beef",
- "goat",
- "lamb",
- "turkey",
- "pork",
- "fish",
- "crab",
- "bacon",
- "ham",
- "pepperoni",
- "salami",
- "ribs"
- ]

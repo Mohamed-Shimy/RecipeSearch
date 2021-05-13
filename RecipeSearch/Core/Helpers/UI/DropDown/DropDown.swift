@@ -143,15 +143,10 @@ class DropDown : UIView, UITableViewDataSource, UITableViewDelegate
     {
         let screenHeight = UIScreen.main.bounds.height
         let viewYOffset = frame.origin.y
-        let itemsHeight = CGFloat(items.count + 1) * cellHeight
+        let itemsHeight = CGFloat(items.count + 1) * cellHeight + 24 // collapseButton height
         let height = min(screenHeight - viewYOffset, itemsHeight) - 20 // bottom padding
         
         setHeightConstraint(height)
-        print("screenHeight: \(screenHeight)")
-        print("viewYOffset: \(viewYOffset)")
-        print("itemsHeight: \(itemsHeight)")
-        print("Height: \(height)")
-        print("\n\n")
     }
     
     private func setHeightConstraint(_ value: CGFloat)

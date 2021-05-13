@@ -11,6 +11,7 @@ import Foundation
 enum Storyboard : String
 {
     case home
+    case recipeDetails
     
     var name: String
     {

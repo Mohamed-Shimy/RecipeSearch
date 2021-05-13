@@ -16,10 +16,10 @@ struct RecipeInfoModel : Codable
         sourceURL,
         recipeID,
         imageURL,
-        socialRank,
         publisherURL,
         title: String?
     
+    let socialRank: Double?
     let ingredients: [String]?
     
     enum CodingKeys: String, CodingKey
@@ -41,14 +41,13 @@ extension RecipeInfoModel
               let sourceURL = sourceURL,
               let recipeID = recipeID,
               let imageURL = imageURL,
-              let socialRank = socialRank,
               let publisherURL = publisherURL,
               let title = title
         else { return  nil }
         
         return .init(publisher: publisher, sourceURL: sourceURL,
-                     recipeID: recipeID, imageURL: imageURL, socialRank: socialRank,
-                     publisherURL: publisherURL, title: title, ingredients: ingredients ?? [])
+                     recipeID: recipeID, imageURL: imageURL, publisherURL: publisherURL,
+                     title: title, socialRank: socialRank ?? 0, ingredients: ingredients ?? [])
     }
 }
 
@@ -60,9 +59,9 @@ struct RecipeInfo
         sourceURL,
         recipeID,
         imageURL,
-        socialRank,
         publisherURL,
         title: String
     
+    let socialRank: Double
     let ingredients: [String]
 }

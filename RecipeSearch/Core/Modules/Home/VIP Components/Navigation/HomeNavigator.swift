@@ -10,13 +10,13 @@ import UIKit
 
 enum HomeNavigator : Navigatable
 {
-    case recipeInfo(Recipe)
+    case recipeDetails(Recipe)
     
     var viewController: UIViewController
     {
         switch self
         {
-            case let .recipeInfo(recipe):
+            case let .recipeDetails(recipe):
                 return UIViewController()
         }
     }

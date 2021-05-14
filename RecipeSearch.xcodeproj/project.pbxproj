@@ -14,6 +14,11 @@
 		D939C848264DB1EE000677AD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939C847264DB1EE000677AD /* Collection.swift */; };
 		D939C84B264DBCAB000677AD /* RecipeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D939C849264DBCAB000677AD /* RecipeDetails.storyboard */; };
 		D939C850264DBD38000677AD /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939C84F264DBD38000677AD /* RecipeDetailsViewController.swift */; };
+		D939C852264DF94E000677AD /* RecipeDetailsRespnse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939C851264DF94E000677AD /* RecipeDetailsRespnse.swift */; };
+		D939C854264E0172000677AD /* RecipeDetailsVIPProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939C853264E0172000677AD /* RecipeDetailsVIPProtocols.swift */; };
+		D939C856264E01A1000677AD /* RecipeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939C855264E01A1000677AD /* RecipeDetailsInteractor.swift */; };
+		D939C858264E01C7000677AD /* RecipeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939C857264E01C7000677AD /* RecipeDetailsPresenter.swift */; };
+		D958A654264E9144001B9B42 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958A653264E9144001B9B42 /* String.swift */; };
 		D96DBB87264B1AF600F004E6 /* HomeVIPProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */; };
 		D96DBB89264B1B0800F004E6 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */; };
 		D96DBB8B264B1B1400F004E6 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */; };
@@ -36,8 +41,8 @@
 		D9968948264C13C10009135C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968947264C13C10009135C /* Navigator.swift */; };
 		D996894A264C14010009135C /* UIViewController + Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968949264C14010009135C /* UIViewController + Navigator.swift */; };
 		D996894E264C15D50009135C /* UIApplecation + Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996894D264C15D50009135C /* UIApplecation + Navigation.swift */; };
-		D9968950264C16580009135C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996894F264C16580009135C /* HomeRouter.swift */; };
-		D9968953264C16A30009135C /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968952264C16A30009135C /* HomeNavigator.swift */; };
+		D9968950264C16580009135C /* RecipeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996894F264C16580009135C /* RecipeRouter.swift */; };
+		D9968953264C16A30009135C /* RecipeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968952264C16A30009135C /* RecipeNavigator.swift */; };
 		D9968955264C18370009135C /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968954264C18370009135C /* AppNavigator.swift */; };
 		D9968957264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968956264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift */; };
 		D996895A264C1B530009135C /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9968959264C1B530009135C /* Storyboard.swift */; };
@@ -69,6 +74,11 @@
 		D939C847264DB1EE000677AD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		D939C84A264DBCAB000677AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RecipeDetails.storyboard; sourceTree = "<group>"; };
 		D939C84F264DBD38000677AD /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		D939C851264DF94E000677AD /* RecipeDetailsRespnse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsRespnse.swift; sourceTree = "<group>"; };
+		D939C853264E0172000677AD /* RecipeDetailsVIPProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsVIPProtocols.swift; sourceTree = "<group>"; };
+		D939C855264E01A1000677AD /* RecipeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsInteractor.swift; sourceTree = "<group>"; };
+		D939C857264E01C7000677AD /* RecipeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsPresenter.swift; sourceTree = "<group>"; };
+		D958A653264E9144001B9B42 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIPProtocols.swift; sourceTree = "<group>"; };
 		D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -91,8 +101,8 @@
 		D9968947264C13C10009135C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D9968949264C14010009135C /* UIViewController + Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Navigator.swift"; sourceTree = "<group>"; };
 		D996894D264C15D50009135C /* UIApplecation + Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplecation + Navigation.swift"; sourceTree = "<group>"; };
-		D996894F264C16580009135C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		D9968952264C16A30009135C /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
+		D996894F264C16580009135C /* RecipeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRouter.swift; sourceTree = "<group>"; };
+		D9968952264C16A30009135C /* RecipeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNavigator.swift; sourceTree = "<group>"; };
 		D9968954264C18370009135C /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		D9968956264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard + UIViewController + Instantiate.swift"; sourceTree = "<group>"; };
 		D9968959264C1B530009135C /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
@@ -165,6 +175,9 @@
 		D939C84D264DBD07000677AD /* VIP Components */ = {
 			isa = PBXGroup;
 			children = (
+				D939C853264E0172000677AD /* RecipeDetailsVIPProtocols.swift */,
+				D939C855264E01A1000677AD /* RecipeDetailsInteractor.swift */,
+				D939C857264E01C7000677AD /* RecipeDetailsPresenter.swift */,
 			);
 			path = "VIP Components";
 			sourceTree = "<group>";
@@ -183,7 +196,6 @@
 				D96DBB86264B1AF600F004E6 /* HomeVIPProtocols.swift */,
 				D96DBB88264B1B0800F004E6 /* HomeInteractor.swift */,
 				D96DBB8A264B1B1400F004E6 /* HomePresenter.swift */,
-				D9968951264C16920009135C /* Navigation */,
 			);
 			path = "VIP Components";
 			sourceTree = "<group>";
@@ -268,8 +280,8 @@
 		D9968951264C16920009135C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				D996894F264C16580009135C /* HomeRouter.swift */,
-				D9968952264C16A30009135C /* HomeNavigator.swift */,
+				D996894F264C16580009135C /* RecipeRouter.swift */,
+				D9968952264C16A30009135C /* RecipeNavigator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -358,6 +370,7 @@
 		D9FDA63426483FA700CA84D3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D9968951264C16920009135C /* Navigation */,
 				D939C84C264DBCF7000677AD /* RecipeDetails */,
 				D9FDA63726483FE900CA84D3 /* Home */,
 			);
@@ -387,6 +400,7 @@
 				D96E38C6264C489B008BEB11 /* UIView + LayoutConstraint.swift */,
 				D939C845264D9C97000677AD /* Int + Index.swift */,
 				D939C847264DB1EE000677AD /* Collection.swift */,
+				D958A653264E9144001B9B42 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -468,6 +482,7 @@
 				D9FDA65D2649C21900CA84D3 /* Recipe.swift */,
 				D9FDA65F2649C3A100CA84D3 /* RecipeInfoModel.swift */,
 				D96E38BB264C29E8008BEB11 /* SearchRespnse.swift */,
+				D939C851264DF94E000677AD /* RecipeDetailsRespnse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -559,8 +574,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9FDA6552649A52100CA84D3 /* Extension.swift in Sources */,
+				D939C858264E01C7000677AD /* RecipeDetailsPresenter.swift in Sources */,
 				D96DBB87264B1AF600F004E6 /* HomeVIPProtocols.swift in Sources */,
 				D9FDA65E2649C21900CA84D3 /* Recipe.swift in Sources */,
+				D939C852264DF94E000677AD /* RecipeDetailsRespnse.swift in Sources */,
 				D99FF084264AFA5100D02F80 /* ForkifyNetworkManager.swift in Sources */,
 				D939C840264D98C5000677AD /* PersistenceController.swift in Sources */,
 				D9FDA6562649A52100CA84D3 /* RequestStatus.swift in Sources */,
@@ -570,6 +587,7 @@
 				D996894E264C15D50009135C /* UIApplecation + Navigation.swift in Sources */,
 				D939C850264DBD38000677AD /* RecipeDetailsViewController.swift in Sources */,
 				D96DBB90264B1D5F00F004E6 /* Alerts.swift in Sources */,
+				D958A654264E9144001B9B42 /* String.swift in Sources */,
 				D9FDA6572649A52100CA84D3 /* Networkable.swift in Sources */,
 				D939C83D264D9726000677AD /* SuggestionBox.swift in Sources */,
 				D96DBB92264B1F6500F004E6 /* UIViewController + Alerts.swift in Sources */,
@@ -580,6 +598,7 @@
 				D9968957264C1A5F0009135C /* UIStoryboard + UIViewController + Instantiate.swift in Sources */,
 				D939C848264DB1EE000677AD /* Collection.swift in Sources */,
 				D96DBBA2264B2C3C00F004E6 /* HomeDataManager.swift in Sources */,
+				D939C854264E0172000677AD /* RecipeDetailsVIPProtocols.swift in Sources */,
 				D996895A264C1B530009135C /* Storyboard.swift in Sources */,
 				D9968940264BE37D0009135C /* HomeDataManagerDelegate.swift in Sources */,
 				D9FDA6582649A52100CA84D3 /* Loadable.swift in Sources */,
@@ -588,7 +607,7 @@
 				D96DBB97264B207700F004E6 /* TableViewDataSource.swift in Sources */,
 				D9FDA61D26483EC200CA84D3 /* AppDelegate.swift in Sources */,
 				D9FDA6602649C3A100CA84D3 /* RecipeInfoModel.swift in Sources */,
-				D9968950264C16580009135C /* HomeRouter.swift in Sources */,
+				D9968950264C16580009135C /* RecipeRouter.swift in Sources */,
 				D96DBB9E264B228800F004E6 /* RecipeTableViewCell.swift in Sources */,
 				D9FDA65A2649A52100CA84D3 /* RemoteTarget.swift in Sources */,
 				D99FF082264AF95600D02F80 /* ForkifyNetworkable.swift in Sources */,
@@ -599,9 +618,10 @@
 				D9FDA63A2648403200CA84D3 /* HomeViewController.swift in Sources */,
 				D9968948264C13C10009135C /* Navigator.swift in Sources */,
 				D96DBB8B264B1B1400F004E6 /* HomePresenter.swift in Sources */,
+				D939C856264E01A1000677AD /* RecipeDetailsInteractor.swift in Sources */,
 				D99FF080264AF68400D02F80 /* ForkifyAPI.swift in Sources */,
 				D96DBB89264B1B0800F004E6 /* HomeInteractor.swift in Sources */,
-				D9968953264C16A30009135C /* HomeNavigator.swift in Sources */,
+				D9968953264C16A30009135C /* RecipeNavigator.swift in Sources */,
 				D96E38BF264C310B008BEB11 /* ImageStore.swift in Sources */,
 				D96E38BC264C29E8008BEB11 /* SearchRespnse.swift in Sources */,
 				D96DBB8E264B1D2C00F004E6 /* Titles.swift in Sources */,

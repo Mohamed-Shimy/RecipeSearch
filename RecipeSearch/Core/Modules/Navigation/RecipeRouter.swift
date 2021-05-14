@@ -1,5 +1,5 @@
 //
-//  HomeRouter.swift
+//  RecipeRouter.swift
 //  RecipeSearch
 //
 //  Created by Mohamed Shemy on Wed 12 May 2021.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class HomeRouter : Navigator
+class RecipeRouter : Navigator
 {
-    typealias Destination = HomeNavigator
+    typealias Destination = RecipeNavigator
     
     // MARK:- Properties
     

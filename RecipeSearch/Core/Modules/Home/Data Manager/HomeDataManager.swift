@@ -30,6 +30,7 @@ class HomeDataManager : NSObject, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        tableView.deselectRow(at: indexPath, animated: true)
         let item = dataSource.item(at: indexPath.row)
         delegate?.didSelect(item, at: indexPath)
     }

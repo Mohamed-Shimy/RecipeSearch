@@ -28,7 +28,7 @@ struct ForkifyNetworkManager : ForkifyNetworkable
         manager.request(.search(for: key), completion: completion)
     }
     
-    func getRecipeInfo(by id: String, completion: @escaping (Result<RecipeInfoModel, Error>) -> Void)
+    func getRecipeInfo(by id: String, completion: @escaping (Result<RecipeDetailsRespnse, Error>) -> Void)
     {
         manager.request(.getRecipeInfo(by: id), completion: completion)
     }

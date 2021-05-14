@@ -20,7 +20,7 @@ class HomeViewController : UIViewController
     // MARK:- Properties
     
     var interactor: HomeInteractorDelegate?
-    var router: HomeRouter?
+    var router: RecipeRouter?
     var dropDown = DropDown()
     
     // MARK:- ViewController LifeCycel
@@ -187,7 +187,7 @@ extension HomeViewController : HomeDataManagerDelegate
 {
     func didSelect(_ item: Recipe, at indexPath: IndexPath)
     {
-        router?.navigate(to: .recipeInfo(item))
+        router?.navigate(to: .recipeDetails(item))
     }
 }
 
@@ -211,7 +211,7 @@ extension HomeViewController
         let view = Self.instantiate(storyboard: .home)
         let presenter = HomePresenter()
         let interactor = HomeInteractor(networkManager: .init(activity: view.networkActivity))
-        let router = HomeRouter(view)
+        let router = RecipeRouter(view)
         
         presenter.view = view
         interactor.presenter = presenter

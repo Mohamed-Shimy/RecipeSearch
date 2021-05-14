@@ -15,6 +15,6 @@ enum Storyboard : String
     
     var name: String
     {
-        return self.rawValue.capitalized
+        return rawValue.capitalizeFirst
     }
 }

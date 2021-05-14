@@ -1,5 +1,5 @@
 //
-//  HomeNavigator.swift
+//  RecipeNavigator.swift
 //  RecipeSearch
 //
 //  Created by Mohamed Shemy on Wed 12 May 2021.
@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import SafariServices
 
-enum HomeNavigator : Navigatable
+enum RecipeNavigator : Navigatable
 {
     case recipeDetails(Recipe)
+    case recipeSourcePage(URL)
     
     var viewController: UIViewController
     {
         switch self
         {
             case let .recipeDetails(recipe):
-                return UIViewController()
+                return RecipeDetailsViewController.create(recipe)
+                
+            case let .recipeSourcePage(url):
+                return SFSafariViewController(url: url)
         }
     }
 }

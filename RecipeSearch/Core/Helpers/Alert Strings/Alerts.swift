@@ -11,6 +11,7 @@ import Foundation
 enum Alert
 {
     case canNotFindRecipe(String)
+    case canNotLoadRecipeDetails
     
     case tryAgain
     case unkown(String?)
@@ -21,6 +22,9 @@ enum Alert
         {
             case let .canNotFindRecipe(name):
                 return "Cann't find recipe '\(name)'"
+                
+            case .canNotLoadRecipeDetails:
+                return "Cannot load recipe details"
                 
             case .tryAgain:
                 return "Something wrong, please try again!"

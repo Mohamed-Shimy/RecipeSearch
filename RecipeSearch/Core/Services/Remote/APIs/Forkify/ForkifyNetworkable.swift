@@ -11,5 +11,5 @@ import Foundation
 protocol ForkifyNetworkable
 {
     func search(for key: String, completion: @escaping (Result<SearchRespnse, Error>) -> Void)
-    func getRecipeInfo(by id: String, completion: @escaping (Result<RecipeInfoModel, Error>) -> Void)
+    func getRecipeInfo(by id: String, completion: @escaping (Result<RecipeDetailsRespnse, Error>) -> Void)
 }

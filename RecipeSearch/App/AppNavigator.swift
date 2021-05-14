@@ -20,7 +20,8 @@ class AppNavigator
     private func setupAppRoot(as controller: UIViewController)
     {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: controller)
+        let navigationController = UINavigationController(rootViewController: controller)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
     

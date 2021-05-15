@@ -48,12 +48,12 @@
                                 <rect key="frame" x="0.0" y="122" width="414" height="730"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="FXb-Kk-W6n">
-                                <rect key="frame" x="187" y="467" width="40" height="40"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FXb-Kk-W6n">
+                                <rect key="frame" x="179" y="459" width="56" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="iIt-Pt-x90"/>
-                                    <constraint firstAttribute="height" constant="40" id="lzu-wT-Sm4"/>
+                                    <constraint firstAttribute="width" constant="56" id="iIt-Pt-x90"/>
+                                    <constraint firstAttribute="height" constant="56" id="lzu-wT-Sm4"/>
                                 </constraints>
                                 <color key="color" systemColor="systemBlueColor"/>
                             </activityIndicatorView>

@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ogA-5s-440">
-                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ogA-5s-440">
+                                <rect key="frame" x="179" y="420" width="56" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DW6-7Y-ezp"/>
-                                    <constraint firstAttribute="width" constant="40" id="TjL-gD-W0d"/>
+                                    <constraint firstAttribute="height" constant="56" id="DW6-7Y-ezp"/>
+                                    <constraint firstAttribute="width" constant="56" id="TjL-gD-W0d"/>
                                 </constraints>
                                 <color key="color" systemColor="systemBlueColor"/>
                             </activityIndicatorView>
@@ -30,7 +30,7 @@
                                 <rect key="frame" x="10" y="44" width="394" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d8E-vc-zD6">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="450"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HRw-yJ-xXl">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="256"/>
@@ -54,10 +54,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1h-bI-H4T">
-                                                <rect key="frame" x="0.0" y="338" width="394" height="50"/>
+                                                <rect key="frame" x="0.0" y="338" width="394" height="52"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gAg-hu-gFe">
-                                                        <rect key="frame" x="50" y="0.0" width="344" height="40"/>
+                                                        <rect key="frame" x="50" y="0.0" width="344" height="52"/>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xB4-ve-3HX">
-                                                <rect key="frame" x="0.0" y="408" width="394" height="40"/>
+                                                <rect key="frame" x="0.0" y="410" width="394" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="1Ge-al-Yvk"/>
                                                 </constraints>

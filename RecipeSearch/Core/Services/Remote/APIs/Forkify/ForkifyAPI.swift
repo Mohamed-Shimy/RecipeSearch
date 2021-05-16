@@ -38,7 +38,13 @@ extension ForkifyAPI : RemoteTarget
     
     var sampleData: Data
     {
-        Data()
+        var data: Data?
+        switch self
+        {
+            case .search: data = loadJSONData(from: .recipes)
+            case .getRecipeInfo: data = loadJSONData(from: .recipeInfo)
+        }
+        return data ?? Data()
     }
     
     var headers: [String : String]?

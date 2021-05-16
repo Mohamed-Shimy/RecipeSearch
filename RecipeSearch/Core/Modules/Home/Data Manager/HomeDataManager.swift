@@ -21,7 +21,7 @@ class HomeDataManager : NSObject, UITableViewDelegate
     
     init(_ recipes: [Recipe])
     {
-        dataSource = .init(recipes)
+        dataSource = RecipeTableViewDataSource(recipes)
     }
     
     // MARK:- Methods
